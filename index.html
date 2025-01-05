@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#home" class="logo">Amar <span>Zikri</span></a>
+        <div class="clock" id="clock"></div>
+
+        <script>
+/*************  ✨ Codeium Command 🌟  *************/
+            /**
+             * Updates the clock element with the current time.
+             */
+            function updateClock() {
+                const clockElement = document.getElementById("clock");
+
+                // Get the current time
+                const now = new Date();
+
+                // Format the time as a string
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+
+                // Set the clock element's text content
+                clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+            }
+    
+            // Update clock every second
+            setInterval(updateClock, 1000);
+            updateClock(); // Initialize clock immediately
+        </script>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home Page</a>
+            <a href="#about-me" class="nav-link">About Me</a>
+            <a href="#experiences" class="nav-link">Experiences</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#family" class="nav-link">Family</a>
+            <a href="#gallery" class="nav-link">Gallery</a> <!-- Fixed typo from "gllery" to "gallery" -->
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Amar Zikri</span></h1>
+            <h3 class="text-animation">I'm a<br><span></span></h3>
+            <p>I'm a Diploma Student At UiTM Rembau</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/marzkryy" target="_self">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://x.com/casjdi6" target="_self">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/amarjem/" target="_self">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://open.spotify.com/user/7y7aayas81l9n5skm21lakkzv" target="_self">
+                    <i class="bx bxl-spotify"></i>
+                </a>
+                <a href="https://accounts.snapchat.com/v2/welcome" target="_self">
+                    <i class="bx bxl-snapchat"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#about-me" class="btn">Read More</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="image/genting.jpg" alt="Amar Zikri">
+        </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-container">
+            <!-- Table Section -->
+            <div class="about-table-wrapper">
+                <table class="about-table">
+                    <tbody>
+                        <tr>
+                            <th>Name:</th>
+                            <td>Muhammad Amar Zikri bin Zamzuri</td>
+                        </tr>
+                        <tr>
+                            <th>Age:</th>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <th>Education:</th>
+                            <td>Diploma in Information Management</td>
+                        </tr>
+                        <tr>
+                            <th>Student ID:</th>
+                            <td>2022476442</td>
+                        </tr>
+                        <tr>
+                            <th>Hobbies:</th>
+                            <td>Coding, Reading, Photography, Playing Mobile Games</td>
+                        </tr>
+                        <tr>
+                            <th>Contact:</th>
+                            <td>2022476442@student.uitm.edu.my</td>
+                        </tr>
+                        <tr>
+                            <th>Address:</th>
+                            <td>B-7-3 PPR Beringin Jalan Miri Off Taman Beringin 52000 Kuala Lumpur</td>
+                        </tr>
+                        <tr>
+                            <th>Gender:</th>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <th>Religion:</th>
+                            <td>Islam</td>
+                        </tr>
+                        <tr>
+                            <th>Prepared For:</th>
+                            <td>Dr Seri Intan Idayu binti Shahrul Asari</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <!-- Image Section -->
+            <div class="about-image">
+                <img src="image/mirrorselfie.jpg" alt="Muhammad Amar Zikri" />
+            </div>
+        </div>
+
+        <h2 class="heading">My Favourite <span>Music</span></h2>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3pc0bOVB5whxmD50W79wwO?utm_source=generator"
+         width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+
+
+    <section class="experiences" id="experiences">
+        <h2 class="heading">My <span>Experiences</span></h2>
+        <p class="experiences-intro">During My Internship:</p>
+        <p class="experiences-meaning"><strong>Experience That I got:</strong></p>
+        <ul>
+            <li>ICT Skills</li>
+            <li>Communications Skills</li>
+            <li>Teamwork</li>
+            <li>Hardware Resolving</li>
+            <li>Decision Making</li>
+        </ul>
+        <div class="experience-container">
+            <div class="experience-box">
+                <img src="image/intern1.jpg" alt="Experience 1" class="experience-image">
+                <div class="experience-content">
+                    <h3>Disposal of <span>Hard Disk</span></h3>
+                    <p>Student need to go to the production place to drill the hard disk that already in dispose status.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern2.jpg" alt="Experience 2" class="experience-image">
+                <div class="experience-content">
+                    <h3>Collect and Sell</h3>
+                    <p>Student need to collect all the hard disk that already been drilled and make it selled to the local seller.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern3.jpg" alt="Experience 3" class="experience-image">
+                <div class="experience-content">
+                    <h3>University Supervisor and Person In Charge Meeting</h3>
+                    <p>Students University Supervisor was met with my person in charge to know how the progress the student during the intership weeks.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern4.jpg" alt="Experience 4" class="experience-image">
+                <div class="experience-content">
+                    <h3>Download a Company Software to the New Scanner of Production Department</h3>
+                    <p>Student need to install the software throught laptop to the new scanner.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern5.jpg" alt="Experience 5" class="experience-image">
+                <div class="experience-content">
+                    <h3>Main Control Room</h3>
+                    <p>Student have been bringing into the main control room at the Kian Joo Can Factory Berhad company.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern6.jpg" alt="Experience 6" class="experience-image">
+                <div class="experience-content">
+                    <h3>Student and his Supervisor</h3>
+                    <p>This is my supervisor during my internship at the Kian Joo Can Factory Berhad Company.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern7.jpg" alt="Experience 7" class="experience-image">
+                <div class="experience-content">
+                    <h3>Student with his Person In Charge</h3>
+                    <p>This is my person in charge during my internship at the Kian Joo Can Factory Berhad Company.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern8.jpg" alt="Experience 8" class="experience-image">
+                <div class="experience-content">
+                    <h3>Make a Work Order Form for IT Department</h3>
+                    <p>Student need to make a work order form for IT Department.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern9.jpg" alt="Experience 9" class="experience-image">
+                <div class="experience-content">
+                    <h3>Production Department</h3>
+                    <p>Student need go to the production department to collect the computer set that already broken to bring at the HQ.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/win tournament.jpg" alt="Experience 10" class="experience-image">
+                <div class="experience-content">
+                    <h3>Win Mobile Legends Tournament at UiTM Rembau</h3>
+                    <p>Student win the E-Sports tournament at the UiTM Rembau.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern10.jpg" alt="Experience 11" class="experience-image">
+                <div class="experience-content">
+                    <h3>Setup Meeting Room for Users</h3>
+                    <p>Student need to setup the meeting room before user used the room.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <img src="image/intern11.jpg" alt="Experience 12" class="experience-image">
+                <div class="experience-content">
+                    <h3>Make Changing in the Meeting Room</h3>
+                    <p>Student need to make changed in the meeting room.</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+
+        <div class="timeline-items">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2011-2016</div>
+                <div class="timeline-content">
+                    <h3>Sekolah Kebangsaan La Salle 2 Jinjang</h3>
+                    <img src="image/exterior-1-28-scaled.jpg" alt="Sekolah Kebangsaan La Salle 2 Jinjang" class="timeline-image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017-2021</div>
+                <div class="timeline-content">
+                    <h3>Sekolah Menengah Kebangsaan Segambut Jaya</h3>
+                    <img src="image/99387045_OuJ1DcX4uzU5NlRyxuuBVte-H8_Fp43oyVQzLKiJkSU.jpg" alt="Sekolah Menengah Kebangsaan Segambut Jaya" class="timeline-image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022-2025</div>
+                <div class="timeline-content">
+                    <h3>UiTM Kampus Rembau</h3>
+                    <img src="image/E_3MiEQVcAAN7ps.jpg" alt="UiTM Kampus Rembau" class="timeline-image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Tree Chart Section-->
+
+    <section class="family" id="family">
+        <h2 class="heading">My <span>Family</span></h2>
+        <div class="tree">
+            <ul>
+                <li>
+                    <ul>
+                        <li>
+                            <div class="box">
+                                <h3>This is my mom</h3>
+                                <img src="image/ma.jpg" alt="My Mom">
+                                <p><b>Janariah binti Sabri</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <h3>This is my father</h3>
+                                <img src="image/abah.jpg" alt="My Father">
+                                <p><b>Zamzuri bin Jusoh</b></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="box">
+                                <img src="image/ayung.jpg" alt="Child 1">
+                                <p><b>1. Ummi Zulaikha binti Zamzuri</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="image/kakngah.jpg" alt="Child 2">
+                                <p><b>2. Aina Zuhanis binti Zammzuri</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="image/kakchik.jpg" alt="Child 3">
+                                <p><b>3. Elia Zurain binti Zamzuri</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="image/abang.jpg" alt="Child 4">
+                                <p><b>4. Muhammad Amar Zikri bin Zamzuri</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="image/adik.jpg" alt="Child 5">
+                                <p><b>5. Anis Zurina binti Zamzuri</b></p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    
+   
+    <!-- Gallery Section -->
+
+    <section class="gallery" id="gallery">
+        <h2 class="heading">Gallery</h2>
+    
+        <div class="gallery-container">
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/WhatsApp Image 2024-12-31 at 09.41.01_276a0039.jpg" alt="Image 1">
+                </div>
+            </div>
+    
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/WhatsApp Image 2024-12-31 at 12.57.17_b9485370.jpg" alt="Image 2">
+                </div>
+            </div>
+    
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/WhatsApp Image 2024-12-31 at 12.57.16_e393ee02.jpg" alt="Image 3">
+                </div>
+            </div>
+    
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/WhatsApp Image 2024-12-31 at 12.57.16_e2656cdf.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/anugrah dekan.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/gambar class.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/friends.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/tournament.jpg" alt="Image 4">
+                </div>
+            </div>
+            
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/event.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/budak.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/budakkecik.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/bunga.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/amirah.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/aishah.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/awekcantik.jpg" alt="Image 4">
+                </div>
+            </div>
+
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/anak buah.jpg" alt="Image 4">
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/jualbuku.jpg" alt="Image 4">
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/gambarkecik.jpg" alt="Image 4">
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/gambarraya.jpg" alt="Image 4">
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/gambardenganyati.jpg" alt="Image 4">
+                </div>
+            </div>
+
+            <div class="gallery-box">
+                <div class="gallery-info">
+                    <img src="image/gambardua.jpg" alt="Image 4">
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="video-info">
+                    <video src="video/WhatsApp Video 2024-12-31 at 12.57.13_279390a8.mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="video-info">
+                    <video src="video/event.mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="video-info">
+                    <video src="video/event2.mp4" controls></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="experiences" id="about me">
+        <div class="">
+           
+        </div>
+    </div>    
+</div>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="https://formspree.io/f/xqaadnpn" method="POST">
+            <div class="input-box">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+        
+            <div class="input-box">
+                <input type="number" name="mobile_number" placeholder="Mobile Number" required>
+                <input type="text" name="email_subject" placeholder="Email Subject" required>
+            </div>
+        
+            <div class="input-group-2">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>        
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/marzkryy" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://x.com/casjdi6" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/amarjem/" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://accounts.snapchat.com/v2/welcome" target="_blank"><i class="bx bxl-snapchat"></i></a> 
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#home">Home Page</a>
+            </li>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#experiences">Experiences</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#family">Family</a>
+            </li>
+            <li>
+                <a href="#gallery">Gallery</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            Copyright &copy; 2025 Amar Zikri All Right Reserved
+        </p>
+    </footer>
+        
+    
+    <!-- Include External JS File for Menu Icon Toggle -->
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
